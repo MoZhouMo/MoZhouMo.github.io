@@ -1,0 +1,121 @@
+html {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 900px;
+    min-height: 720px;
+}
+body {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #E5E5E5;
+    background-image: url('../images/main_bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+}
+.card-header h2, .card-header .col-right p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 24px;
+    padding: 20px 0px 0px 0px;
+    margin-bottom: -10px;
+}
+.profile-card {
+    width: 810px;
+    height: 540px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.profile-card .card-header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 100%), none;
+    border-radius: 20px 20px 0px 0px;
+    padding: 50px 25px 0px 25px;
+    text-align: center;
+    position: relative;
+}
+.shadow {
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+}
+.img-wrapper {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+.img-wrapper img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.img-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.col-left {
+    width: 50%;
+    float: left;
+}
+.col-right {
+    width: 50%;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.padding {
+    padding: 50px;
+}
+.card-footer p, .card-footer li {
+    font-family: 'Times New Roman', Times, serif;
+}
+.list {
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+    list-style: none;
+    display: inline-block;
+}
+.list li {
+    margin: 20px 0px;
+    text-align: left;
+}
+.list li .title {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+.list li .value {
+    display: inline-block;
+    color: gray;
+}
+.list li .value a {
+    color: gray;
+    text-decoration: none;
+}
+.list li .value a:hover {
+    color: black;
+}
+header {
+    width: 810px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+footer {
+    position: fixed;
+    background-color: #E5E5E5;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.copyright {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
