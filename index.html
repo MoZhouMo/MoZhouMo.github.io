@@ -9,28 +9,50 @@
 </head>
 <body>
     <header>
-        <h1>Mo Zhou</h1>
-        <div class="nav"></div>
+        <h1 class="title">Mo Zhou</h1>
+        <div class="nav">
+            <div class="contact-button">
+                <p><button id="modal-open">Contact me</button></p>
+            </div>
+        </div>
     </header>
+
+    <!-- popup a modal contact -->
+    <div id="modal-wrapper">
+        <div id="modal-window">
+            <div id="modal-close">&times</div>
+            <p>Complete the form below to cantact me.</p>
+            <form id="modal-form" action="#" method="post" accept-charset="UTF-8">
+                <p><label>name<br>
+                <input type= "text" required size="36" name="name" id="form-name" value=""</label></p>
+                <p><label>email<br>
+                <input type="email" required size="36" name="email" id="form-email" value=""</label></p>
+                <p><label>message<br>
+                <textarea required name="message" id="form-message" cols="36" rows="3"></textarea></label></p>
+                <p><input type="submit" name="contactForm" id="form-submit" value="send"></p>
+            </form>
+        </div>
+    </div>
 
     <main>
         <div class="profile-card shadow">
             <div class="card-header">
                 <div class="col-left">
                     <div class="img-wrapper">
-                        <img src="./images/avatar.jpg" alt="Mo Zhou profile image" class="profile">
+                        <img src="./images/avatar.jpg" alt="Mo Zhou profile image" id="link-show" class="profile">
                     </div>
+                        <p id="github-link">https://github.com/MoZhouMo</p>
                 </div>
                 <div class="col-right">
-                    <h2>Mo Zhou</h2>
+                    <h2 id="#name">Mo Zhou</h2>
                     <p>Front-End Developer</p>
                 </div>
                 <div class="clear"></div>
             </div>
             <div class="card-footer padding">
                 <div class="col-left">
-                    <h3>About</h3>
-                    <p>Hello! I am Mo Zhou. 
+                    <h3 id="#about">About</h3>
+                    <p id="#content">Hello! I am Mo Zhou. 
                         This is my personal website. 
                         <br>
                         I recently worked on front-end web development. 
@@ -57,5 +79,8 @@
             <p>Copyright &copy 2017 Mo Zhou. All rights reserved.</p>
         </div>
     </footer>
+
+    <script type="text/javascript" src="./js/app.js"></script>
+
 </body>
 </html>
