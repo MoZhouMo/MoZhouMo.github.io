@@ -17,7 +17,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: cover;
 }
-.card-header h2, .card-header .col-right p {
+.card-header-main h2, .card-header-main .col-right p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     font-size: 24px;
@@ -30,10 +30,12 @@ body {
     margin: 0 auto;
     border-radius: 20px;
 }
-.profile-card .card-header {
+.profile-card .card-header-main {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 100%), none;
+    height: 240px;
+    
     border-radius: 20px 20px 0px 0px;
-    padding: 50px 25px 0px 25px;
+    padding: 50px 20px 0px 20px;
     text-align: center;
     position: relative;
 }
@@ -72,7 +74,7 @@ body {
 .padding {
     padding: 50px;
 }
-.card-footer p, .card-footer li {
+.card-footer-main p, .card-footer-main li {
     font-family: 'Times New Roman', Times, serif;
 }
 .list {
